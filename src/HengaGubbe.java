@@ -15,6 +15,5 @@ public class HengaGubbe {
         for (int x= 1; x<ordlängd; x++)
             txt = txt + "_";
 
-
     }
 }
