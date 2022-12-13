@@ -10,6 +10,11 @@ public class HengaGubbe {
         for (int x=1;x<ord; x++)
             ordet[x]= in.nextLine();
         String rättOrd = ordet[ord];
+        String txt ="";
+        int ordlängd = rättOrd.length();
+        for (int x= 1; x<ordlängd; x++)
+            txt = txt + "_";
+
 
     }
 }
