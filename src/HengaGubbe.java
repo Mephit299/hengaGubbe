@@ -6,14 +6,16 @@ public class HengaGubbe {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(new File("giltigaOrd.txt"));
         int ord = (int) (Math.random()*101);
-        String[] ordet = new String[ord];
-        for (int x=1;x<ord; x++)
+        String[] ordet = new String[ord+1];
+        for (int x = 0; x <= ord; x++){
             ordet[x]= in.nextLine();
-        String rättOrd = ordet[ord];
+        }
+        String rattOrd = String.valueOf(ordet[ord]);
         String txt ="";
-        int ordlängd = rättOrd.length();
-        for (int x= 1; x<ordlängd; x++)
-            txt = txt + "_";
-
+        int ordLenght = rattOrd.length();
+        for (int x = 0; x<ordLenght; x++) txt = txt + "_";
+        System.out.println(txt);
+        System.out.println(ord);
+        System.out.println(rattOrd);
     }
 }
