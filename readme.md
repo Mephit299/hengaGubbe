@@ -9,3 +9,4 @@ Logbook
 * Samuel började listan för orden.
 * Arbetade med Sluppgeneratorn för ordet. (Levi)
 * Arbetade med att lässa in en gissning och kolla om gissningen finns i ordet. (Levi)
+* (Nästa dag)   It works.

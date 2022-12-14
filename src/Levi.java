@@ -1,6 +1,6 @@
 public class Levi {
     public static String title(String ord, String gissning, String ___){
-        String txt = "";
+        String txt = ""; // Det här fungerar för tillfället.
         gissning = gissning.toLowerCase();
         if (ord.contains(gissning)){
             if (gissning.length()>1){
@@ -11,14 +11,14 @@ public class Levi {
 
             int x = ord.length();
             for (int y=0;y<x; y++){
-                String z = String.valueOf(ord.charAt(x));
-                String a = String.valueOf(___.charAt(x));
+                String z = String.valueOf(ord.charAt(y));
+                String a = String.valueOf(___.charAt(y));
                 if (z.equals(gissning) && txt.equals(""))
                     txt = txt + gissning.toUpperCase();
                 else if (z.equals(gissning))
                     txt = txt + gissning;
                 else if (a != "_")
-                    txt = txt + ___.charAt(x);
+                    txt = txt + ___.charAt(y);
                 else
                     txt = txt +"_";
             }
