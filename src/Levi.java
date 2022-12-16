@@ -1,12 +1,12 @@
 public class Levi {
     public static String title(String ord, String gissning, String ___){
-        String txt = ""; // Det här fungerar för tillfället.
+        String txt = ""; // Det här fungerar för tillfället. Byt namn från "title"
         gissning = gissning.toLowerCase();
         if (ord.contains(gissning)){
             if (gissning.length()>1){
                 if (gissning.equals(ord))
                     return gissning;
-                else {} // hitta vart gissningen finns i ordet. (fråga magnus om det här behövs)
+                else {return "ordFalse";} // hitta vart gissningen finns i ordet. (fråga magnus om det här behövs)
             }
 
             int x = ord.length();
@@ -28,6 +28,7 @@ public class Levi {
             return gissning;
         }
         return txt;
-
     }
+
+
 }
