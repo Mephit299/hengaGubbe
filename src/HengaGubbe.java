@@ -22,7 +22,7 @@ public class HengaGubbe {
 
         System.out.println(ord);
         while (true) {
-            System.out.println("Gissa en bokstav eller ett ord.\nOrdet är " + txt + "\nAntalet kvarsående försök är " + kvarståendeFörsök);
+            System.out.println(Samuel.gubbe(kvarståendeFörsök) +"\n" + txt + "\nAntalet kvarsående försök är " + kvarståendeFörsök);
             String gissning = inGissning.nextLine().toLowerCase();
             resultat = Samuel.gissat(gissadeBokstaver, gissning, gissadeOrd);
             if (resultat.equals("bokstavgissat")) {
@@ -44,7 +44,7 @@ public class HengaGubbe {
                 System.out.println("rätt");
                 System.exit(0);
             } else if (kvarståendeFörsök==0) {
-                System.out.println("Slut på försök");
+                System.out.println(Samuel.gubbe(kvarståendeFörsök) + "\nSlut på försök");
                 System.out.println("Ordet var " + ordet);
                 System.exit(0);
 
