@@ -18,12 +18,12 @@ public class HengaGubbe {
         String txt ="";
         int ordLenght = ordet.length();
         for (int x = 0; x<ordLenght; x++)
-            txt = txt + "_";
-        System.out.println(ord);
+            txt +="_";
 
+        System.out.println(ord);
         while (true) {
-            System.out.println("Gissa en bokstav eller ord. Ordet är " + txt + "  Antalet kvarsående försök är " + kvarståendeFörsök);
-            String gissning = inGissning.nextLine();
+            System.out.println("Gissa en bokstav eller ett ord.\nOrdet är " + txt + "\nAntalet kvarsående försök är " + kvarståendeFörsök);
+            String gissning = inGissning.nextLine().toLowerCase();
             resultat = Samuel.gissat(gissadeBokstaver, gissning, gissadeOrd);
             if (resultat.equals("bokstavgissat")) {
                 System.out.println("Bokstaven " + gissning + " är redan gissad");
@@ -43,17 +43,15 @@ public class HengaGubbe {
                 System.out.println(txt);
                 System.out.println("rätt");
                 System.exit(0);
-            } else if (kvarståendeFörsök==1) {
+            } else if (kvarståendeFörsök==0) {
                 System.out.println("Slut på försök");
                 System.out.println("Ordet var " + ordet);
                 System.exit(0);
 
             }
             }
-
-
         }
+
     }
-
-
 }
+
