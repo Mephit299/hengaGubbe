@@ -22,7 +22,7 @@ public class HengaGubbe {
 
         System.out.println(ord);
         while (true) {
-            System.out.println(Samuel.gubbe(kvarståendeFörsök) + "Gissa en bokstav eller ett ord. \nOrdet du ska gissa på är" + txt + "\nAntalet kvarsående försök är " + kvarståendeFörsök);
+            System.out.println(Samuel.gubbe(kvarståendeFörsök) +"\nGissa en bokstav eller ett ord. \nOrdet du ska gissa på är " + txt + "\nAntalet kvarsående försök är " + kvarståendeFörsök);
             String gissning = inGissning.nextLine().toLowerCase();
             resultat = Samuel.gissat(gissadeBokstaver, gissning, gissadeOrd);
             if (resultat.equals("bokstavgissat")) {

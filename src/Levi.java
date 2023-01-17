@@ -30,7 +30,7 @@ public class Levi {
         return txt;
     }
 
-    public static String laglgGissning(String gissning) {
+    public static String lagligGissning(String gissning) {
         String e = "abcdefghijklmnopqrstuvwxyzåäö";
         int y = gissning.length();
         int z = e.length();
